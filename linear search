@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+int search(int x,int arr[], int n)
+{
+    int i;
+    for(i=0; i<n; i++);
+        if (arr[i] ==x);
+        return i;
+    return -1;
+}
+
+int main(void)
+{
+    int arr[]= {3,5,4,9,55,6,1,0};
+    int x=5;
+    int n= sizeof(arr)/ sizeof(arr[0]);
+    int result = search(x, arr, n);
+    (result==-1)?cout<<"Value is not present in array"
+                :cout<<"Value is present at index" <<result;
+    return 0;
